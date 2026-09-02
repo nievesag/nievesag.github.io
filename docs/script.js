@@ -100,4 +100,4 @@ const btn3 = document.querySelector('li:nth-child(3) button');
 new HoverButton(btn3);
 
 const btn4 = document.querySelector('li:nth-child(4) button');
-new HoverButton(btn3);
+new HoverButton(btn4);
