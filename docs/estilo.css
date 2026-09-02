@@ -1,3 +1,33 @@
+
+/*** Works on common browsers ***/
+::selection {
+    background-color: #352e7e;
+    color: #ff0909;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #352e7e;
+    color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #352e7e;
+    color: #fff;
+}
+
+::-ms-selection {
+    background-color: #352e7e;
+    color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #352e7e;
+    color: #fff;
+}
+
 @font-face {
   font-family: "Lexend";
   src: url('fnt/Lexend-Medium.ttf');
@@ -14,6 +44,11 @@
 }
 
 @font-face {
+  font-family: "Doto";
+  src: url('fnt/Doto-VariableFont_ROND,wght.ttf');
+}
+
+@font-face {
   font-family: "Inter_SemiBold";
   src: url('fnt/Inter_18pt-SemiBold.ttf');
 }
@@ -22,22 +57,18 @@
   src: url('fnt/Inter_18pt-Medium.ttf');
 }
 
+/*** Variables colores ***/
+:root {
+  --fondo: #FEFFF0;
+  --blanco: #FEFFF0;
+  --naranja: #FF7640;
+  --verde: #B1D500;
+}
+
 html {
   font-family: 'Inter';
-  background-color: #171717;
+  background-color: var(--fondo);
   opacity: 1;
-}
-
-.h1imp {
-  font-family: "DotGothic16";
-  color: rgb(113, 188, 32);
-  font-size: 56px;
-}
-
-.h2 {
-  font-family: "Inter";
-  color: rgb(113, 188, 32);
-  font-size: 1rem;
 }
 
 .top {
@@ -55,15 +86,22 @@ html {
 }
 
 body {
-  color: #272727;
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--fondo);
+  margin: 0;
+  position: relative;
 }
 
 .main{
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--fondo);
 }
 
 #main {
@@ -71,49 +109,22 @@ body {
 }
 
 .about {
-  width: 70vw;
-  height: 30vh;
-  background: rgb(113, 188, 32, 0.11);
+  width: 40vw;
   margin: 0 auto;
 }
 
-.p {
-  color: rgba(245, 255, 250);
-  font-family: 'Inter_SemiBold';
-  font-weight: bold;
+.about p {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-size: 48px;
-  font-weight: 400;
-  font-family: "DotGothic16";
-  color: rgb(113, 188, 32);
+  font-weight: 600;
+  font-family: "Doto";
+  color: var(--naranja);
   text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#171717;
-}
-
-ul li {
-  float: right;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 64px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #171717;
-  color: rgb(113, 188, 32);
+  scroll-margin-top: 10vmin;
 }
 
 img {
@@ -123,7 +134,7 @@ img {
 }
 
 .btn {
-  color: #ffffff;
+  color: #000000;
   padding: 0.8rem;
   font-size: 14px;
   text-transform: uppercase;
@@ -137,8 +148,49 @@ img {
 }
 
 .btn:hover {
-  background-color: #17171761;
-  color: rgb(113, 188, 32);
+  background-color: var(--naranja);
+  color: var(--fondo);
+}
+
+/*** Link buttons ***/
+
+.link-ul {
+  padding: 0;
+}
+
+.link-li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 20px;
+  &:nth-child(1) button {
+    background: #F3FFBD;
+  }
+  &:nth-child(2) button {
+    background: #247BA0;
+  }
+  &:nth-child(3) button {
+    background: #FF1654;
+  }
+  &:nth-child(4) button {
+    background: #de83ec;
+  }
+}
+
+.link-btn {
+  position: relative;
+  background: rebeccapurple;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid rgb(249, 220, 0);
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  align-self: center;
 }
 
 .cards {
@@ -147,11 +199,13 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: var(--fondo);
 }
 
 .cards_item {
   display: flex;
   padding: 1rem;
+  background-color: var(--fondo);
 }
 
 @media (min-width: 40rem) {
@@ -167,9 +221,9 @@ img {
 }
 
 .card {
-  background-color: #171717;
+  background-color: #0646dcd1;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px -14px rgba(255, 125, 33, 0.124);
   display: flex;
   flex-direction: column;
   /* overflow: hidden; */
@@ -177,11 +231,11 @@ img {
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left,  #171717 40%, rgb(59, 109, 6) 200%);
+  background: linear-gradient(to bottom left,  var(--fondo) 40%, rgb(59, 109, 6) 200%);
 }
 
 .card_title {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -190,7 +244,7 @@ img {
 }
 
 .card_text {
-  color: #ffffff;
+  color: #000000;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    
@@ -209,16 +263,6 @@ img {
   --t: 204, 204, 204;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color:  #171717;
-  margin: 0;
-  color: rgb(var(--t));
-  position: relative;
-}
 
 .container {
   display: flex;
@@ -324,9 +368,9 @@ body {
 }
 
 .lines {
-  width: 1px;
+  width: 5px;
   height: 100%;
-  background-color: rgb(113, 188, 32, 0.2);
+  background-color: var(--naranja);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,8 +379,8 @@ body {
 
 .lines span {
   width: 1rem;
-  background-color: rgb(113, 188, 32, 0.4);
-  height: 1px;
+  background-color: var(--naranja);
+  height: 5px;
   position: absolute;
 }
 
@@ -344,29 +388,29 @@ body {
   position: fixed;
   height: 15%;
   width: 1rem;
-  background-color:  #171717;
+  background-color: var(--fondo);
   z-index: 500;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
-  font-family: DotGothic16;
-  color: rgb(113, 188, 32);
+  font-size: 1.2rem;
+  font-family: Inter;
+  font-weight: 600;
+  color: var(--naranja);
 }
 
 .one {
   top: 0;
-  border-width: 0 0 1px 0;
-  border-color: rgb(113, 188, 32);
+  border-width: 0 0 6px 0;
+  border-color: var(--naranja);
   border-style: solid;
-  
 }
 
 .two {
   bottom: 0;
-  border-width: 1px 0 0px 0;
-  border-color: rgb(113, 188, 32);
+  border-width: 6px 0 0 0;
+  border-color: var(--naranja);
   border-style: solid;
 }
 
@@ -381,7 +425,7 @@ body {
     align-items: flex-start;
     gap: 3vw;
     display: inline-flex;
-    background-color: #171717;
+    background-color: var(--fondo);
     z-index: 10;
 }
 

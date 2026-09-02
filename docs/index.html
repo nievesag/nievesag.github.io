@@ -7,44 +7,43 @@
   <meta charset="utf-8">
   <title>Nieves Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css"> <!-- Esto cargaria un archivo de estilo, pero no es necesario en Fiddle porque lo hace automáticamente -->
-  <script src="script.js"></script> <!--Aquí podriamos cargar los scripts, también se puede en el <body>, y pasa lo mismo que con el css de antes, en verdad aquí no estamos cargando nada-->
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
 </head>
 
+  <!-- scroll -->
 <body>
-<div class="ruler">
-  <div class="mask one">0%</div>
-  <div class="mask two">0%</div>
-  <div class="lines">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
+  <div class="ruler">
+    <div class="mask one">0%</div>
+    <div class="mask two">0%</div>
+    <div class="lines">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-</div>
-
-  <main id="main">
 
   <div class="navbar">
     <div class="bar-element">
@@ -52,108 +51,143 @@
     </div>
   </div>
 
-    <div class="navbar">
-      <div class="bar-element">
-        <a href="#profile" data-i18n="profileTitle">Profile</a>
-      </div>
+  <div class="navbar">
+    <div class="bar-element">
+      <a href="#about-me" data-i18n="profileTitle">About me</a>
+    </div>
 
-      <div class="bar-element">
-        ·</div>
+    <div class="bar-element">
+      ·</div>
 
-      <div class="bar-element">
-        <a href="#skills" data-i18n="skillsTitle">Skills</a>
-      </div>
+    <div class="bar-element">
+      <a href="#profile" data-i18n="skillsTitle">Profile</a>
+    </div>
 
-      <div class="bar-element">
-        ·</div>
+    <div class="bar-element">
+      ·</div>
 
-      <div class="bar-element">
-        <a href="#projects" data-i18n="projectsTitle">Projects</a>
-      </div>
+    <div class="bar-element">
+      <a href="#projects" data-i18n="projectsTitle">Projects</a>
+    </div>
 
-      <div class="bar-element">
-        ·</div>
+    <div class="bar-element">
+      ·</div>
 
-      <div class="bar-element">
-        <a href="#links" data-i18n="linksTitle">Links</a>
+    <div class="bar-element">
+      <a href="#contact" data-i18n="linksTitle">Contact</a>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="about">
+      <h1 id="about-me">About me</h1>
+      <p>Last-year student of video game development equipped with a deep love for videogames eager to start working
+        in the game industry and make my mark.
+        By participating in game jams and working on both university and personal projects, have gained experience
+        working with and coordinating development teams, holding roles as a gameplay programmer, UI/UX programmer,
+        game-flow programmer and engine programmer.
+        With a solid foundation in artistic knowledge, thanks to my experience as a visual development artist, painter
+        and illustrator, I have been able to develop as a technical artist allowing me to work as a bridge between
+        programmers and artists in development teams.
+        I approach programming as a creative tool for bringing worlds to life through my code.</p>
+
+      <!-- links -->
+      <div>
+        <ul class="link-ul">
+          <li class="link-li">
+            <button class="link-btn">🦊</button>
+          </li>
+          <li class="link-li">
+            <button class="link-btn">🐶</button>
+          </li>
+          <li class="link-li">
+            <button class="link-btn">🦄</button>
+          </li>
+          <li class="link-li">
+            <button class="link-btn">🐺​</button>
+          </li>
+        </ul>
       </div>
     </div>
 
-  <div class="main">
-  <div class="about">
-    <h1>About me</h1>
-    <p>A little paragraph introduction that gives a sense of what you do, who you are, where you’re from, and why you created this website. This is the most likely part of the page to be read in full.</p>
+    <div class="profile">
+      <h1 id="profile">Profile</h1>
+    </div>
+
+    <div class="projects">
+      <h1 id="projects">Projects</h1>
+      <ul class="cards">
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards_item">
+          <div class="card">
+            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+            <div class="card_content">
+              <h2 class="card_title">Card Grid Layout</h2>
+              <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
+              <button class="btn card_btn">Read More</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h1 id="contact">Contact</h1>
+    </div>
   </div>
 
-  <h1>Projects</h1>
-  <ul class="cards">
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
+  <h3 class="made_by">2026 Nieves Alonso Gilsanz</h3>
 
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-    <li class="cards_item">
-      <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
-        <div class="card_content">
-          <h2 class="card_title">Card Grid Layout</h2>
-          <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
-          <button class="btn card_btn">Read More</button>
-        </div>
-      </div>
-    </li>
-  </ul>
-</div>
-
-<h3 class="made_by">2026 Nieves Alonso Gilsanz</h3>
-    
-  </main>
 </body>
 
 </html>
