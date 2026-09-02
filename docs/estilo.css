@@ -1,8 +1,8 @@
 
 /*** Works on common browsers ***/
 ::selection {
-    background-color: #352e7e;
-    color: #ff0909;
+    background-color: #B1D500;
+    color: #0080ff;
 }
 
 /*** Mozilla based browsers ***/
@@ -71,13 +71,6 @@ html {
   opacity: 1;
 }
 
-.top {
-  padding-left: 64px;
-  padding-right: 64px;
-  border-top: 24px;
-  border-bottom: 24px;
-}
-
 /* Design */
 *,
 *::before,
@@ -102,10 +95,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background-color: var(--fondo);
-}
-
-#main {
-  width: 100%;
 }
 
 .about {
@@ -154,13 +143,23 @@ img {
 
 /*** Link buttons ***/
 
+.links {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
 .link-ul {
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .link-li {
-  display: inline-block;
   list-style-type: none;
+  
   margin: 0 20px;
   &:nth-child(1) button {
     background: #F3FFBD;
@@ -174,23 +173,27 @@ img {
   &:nth-child(4) button {
     background: #de83ec;
   }
+
+  align-self: center;
 }
 
 .link-btn {
   position: relative;
   background: rebeccapurple;
-  width: 80px;
-  height: 80px;
+  width: auto;
+  height: auto;
   border-radius: 50%;
-  border: 5px solid rgb(249, 220, 0);
+  border: 5px solid var(--verde);
   color: white;
   font-weight: bold;
   font-size: 40px;
   cursor: pointer;
   padding: 0;
-  flex-wrap: wrap;
-  list-style: none;
-  align-self: center;
+}
+
+.bio {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .cards {
@@ -262,7 +265,6 @@ img {
   --c: 238, 199, 99;
   --t: 204, 204, 204;
 }
-
 
 .container {
   display: flex;
@@ -364,7 +366,7 @@ img {
   left: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
 }
 
 .lines {
@@ -415,32 +417,47 @@ img {
 }
 
 .navbar {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3vw;
-    display: inline-flex;
-    background-color: var(--fondo);
-    z-index: 10;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3vw;
+  display: inline-flex;
+  background-color: var(--fondo);
+  z-index: 10;
 }
 
 .bar-element {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    color: rgb(113, 188, 32);
-    font-size: 4vmin;
-    font-family: DotGothic16;
-    word-wrap: break-word;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 128, 0);
+  font-size: 4vmin;
+  font-family: Inter;
+  font-weight: 550;
+  word-wrap: break-word;
+}
+
+.name {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  font-size: 3vmin;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
 }
 
 .bar-element a {
-    color: rgb(255, 128, 0);
+  color: rgb(255, 128, 0);
+  font-size: 3.3vmin;
+  font-family: Inter;
+  font-weight: 600;
 }
 
 .lines span:nth-child(1) {
@@ -545,7 +562,11 @@ img {
 
 @media (max-width:600px) {
   .ruler {
-    left: 3px;
+    left: 9px;
+  }
+
+  .mask {
+    font-size: 0.9rem;
   }
 
   .cards {
