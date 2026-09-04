@@ -1,37 +1,31 @@
 /*** Works on common browsers ***/
 ::selection {
-    background-color: #d54000;
-    color: #ccff00;
+  background-color: #d54000;
+  color: #ccff00;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-    background-color: #352e7e;
-    color: #fff;
+  background-color: #352e7e;
+  color: #fff;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-    background-color: #352e7e;
-    color: #fff;
+  background-color: #352e7e;
+  color: #fff;
 }
 
 ::-ms-selection {
-    background-color: #352e7e;
-    color: #fff;
+  background-color: #352e7e;
+  color: #fff;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-    background-color: #352e7e;
-    color: #fff;
+  background-color: #352e7e;
+  color: #fff;
 }
-
-@font-face {
-  font-family: "Lexend";
-  src: url('fnt/Lexend-Medium.ttf');
-}
-
 @font-face {
   font-family: "DotGothic16";
   src: url('fnt/DotGothic16-Regular.ttf');
@@ -51,7 +45,7 @@
   /*** Variables colores ***/
   --fondo: #0C0807;
   --blanco: #FEFFF0;
-  
+
   --negro: #0C0807;
   --naranja: #FF5D1D;
   --verde: #B1D500;
@@ -84,26 +78,23 @@ p {
   color: var(--blanco);
 }
 
-.wrapper
-{
+.wrapper {
   height: 100vh;
   font-family: 'Inter';
   display: flex;
   flex-flow: row nowrap;
 }
 
-.menu 
-{
+.menu {
   flex: 1;
   overflow: hidden;
   position: relative;
-  color:#fdfdfd;
+  color: #fdfdfd;
 }
 
-.content
-{
+.content {
   flex: 1;
-  color:#fdfdfd;
+  color: #fdfdfd;
   overflow-y: auto;
   padding: 0 16px;
 }
@@ -112,7 +103,8 @@ p {
   .menu {
     display: none;
   }
-  .content{
+
+  .content {
     width: 100%;
   }
 }
@@ -122,15 +114,18 @@ h4 {
   scroll-margin-top: 10vmin;
 }
 
+h2 {
+  margin: 0;
+}
+
 hr {
   border: 1px solid;
 }
 
-.content hr
-{
+.content hr {
   margin-top: 24px;
   margin-bottom: 48px;
-  color:rgb(253, 253, 253);
+  color: rgb(253, 253, 253);
 }
 
 .project video {
@@ -138,6 +133,36 @@ hr {
   height: auto;
   display: block;
 }
+
+.subtitle {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--naranja);
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,12 +181,14 @@ nav {
   margin-top: -250px;
   margin-left: -250px;
   user-select: none;
-  /*** transform: translate3d(25px, -25px, 0); ***/ 
+  /*** transform: translate3d(25px, -25px, 0); ***/
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
+
 nav.open {
   transform: translate3d(0, 0, 0);
 }
+
 nav.top-right {
   top: -140px;
   right: -140px;
@@ -182,9 +209,11 @@ nav.top-right {
   cursor: pointer;
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
 }
+
 .disc div {
   transform: rotate(var(--grados-iniciales));
 }
+
 .open .disc {
   pointer-events: auto;
   opacity: 1;
@@ -198,20 +227,24 @@ nav.top-right {
   background: var(--verde);
   transition-delay: 0s;
 }
+
 .open .l1 {
   transition-delay: 0s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
+
 .open .l1:hover {
   background: shade(tomato, 90%);
   color: var(--azul);
   transition-delay: 0s;
 }
+
 .open .l1:active {
   background: shade(tomato, 50%);
   color: tomato;
 }
+
 .open .l1.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
@@ -224,20 +257,24 @@ nav.top-right {
   background: var(--rosa);
   transition-delay: 0.1s;
 }
+
 .open .l2 {
   transition-delay: 0.1s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
+
 .open .l2:hover {
   background: shade(#ff7a39, 90%);
   color: var(--negro);
   transition-delay: 0s;
 }
+
 .open .l2:active {
   background: shade(#ff7a39, 50%);
   color: #ff7a39;
 }
+
 .open .l2.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
@@ -250,20 +287,24 @@ nav.top-right {
   background: var(--morado);
   transition-delay: 0.2s;
 }
+
 .open .l3 {
   transition-delay: 0.2s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
+
 .open .l3:hover {
   background: shade(#ff912b, 90%);
   color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
+
 .open .l3:active {
   background: shade(#ff912b, 50%);
   color: #ff912b;
 }
+
 .open .l3.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
@@ -276,20 +317,24 @@ nav.top-right {
   background: var(--azul);
   transition-delay: 0.3s;
 }
+
 .open .l4 {
   transition-delay: 0.3s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
+
 .open .l4:hover {
   background: shade(#ffa91c, 90%);
   color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
+
 .open .l4:active {
   background: shade(#ffa91c, 50%);
   color: #ffa91c;
 }
+
 .open .l4.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
 }
@@ -302,20 +347,24 @@ nav.top-right {
   background: #ffc00e;
   transition-delay: 0.4s;
 }
+
 .open .l5 {
   transition-delay: 0.4s;
   transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -15deg);
   opacity: 1;
 }
+
 .open .l5:hover {
   background: shade(#ffc00e, 90%);
   color: #ffc00e;
   transition-delay: 0s;
 }
+
 .open .l5:active {
   background: shade(#ffc00e, 50%);
   color: #ffc00e;
 }
+
 .open .l5.toggle {
   transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -15deg);
 }
@@ -330,22 +379,22 @@ nav.top-right {
   pointer-events: auto;
   transition-delay: 0s;
 }
+
 .open .toggle {
   transform: rotate3d(0, 0, 1, 0deg);
 }
+
 .toggle:hover {
   background: shade(gold, 90%);
   text-decoration: underline;
 }
+
 .toggle:active {
   background: shade(gold, 50%);
   color: rgba(255, 215, 0, 0.5);
   transform: scale(0.9);
   transition-duration: 0s;
 }
-
-
-
 
 /*** Timeline ***/
 /*** ref.: https://codepen.io/NielsVoogt/pen/MbMMxv/ ***/
@@ -361,9 +410,11 @@ nav.top-right {
   color: var(--blanco);
   border-left: 2px solid var(--blanco);
 }
+
 .timeline-item p {
   font-size: 1rem;
 }
+
 .timeline-item::before {
   content: attr(date-is);
   position: absolute;
@@ -375,6 +426,7 @@ nav.top-right {
   font-weight: 700;
   font-size: 0.785rem;
 }
+
 .timeline-item::after {
   width: 10px;
   height: 10px;
@@ -387,6 +439,7 @@ nav.top-right {
   border: 2px solid var(--blanco);
   background: var(--fondo);
 }
+
 .timeline-item:last-child {
   border-image: linear-gradient(to bottom, var(--blanco) 60%, var(--blanco)) 1 100%;
 }
