@@ -96,7 +96,7 @@ body {
   background-color: #0000006f;
   color:#fdfdfd;
   overflow-y: auto;
-  margin-right: 30px;
+  margin: 0 16px;
 }
 
 @media (max-width: 800px) {
