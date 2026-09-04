@@ -83,6 +83,7 @@ p {
   font-family: 'Inter';
   display: flex;
   flex-flow: row nowrap;
+  position: relative;
 }
 
 .menu {
@@ -100,12 +101,23 @@ p {
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .site-header{
+    position: static;
+  }
+
   .menu {
     display: none;
   }
 
   .content {
     width: 100%;
+    flex: none;
+    overflow-y: visible;
   }
 }
 
@@ -141,8 +153,18 @@ hr {
   margin: 0;
 }
 
+.footer-c p {
+  float: right;
+  padding-bottom: 10px;
+  color:#fefff094;
+}
 
-
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--blanco);
+}
 
 
 
