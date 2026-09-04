@@ -83,6 +83,7 @@ body {
   flex: 1;
   overflow: hidden;
   background-color: #ff77003b;
+  position: relative;
 }
 
 .content
@@ -111,11 +112,15 @@ body {
 /*** ref.: https://codepen.io/bennettfeely/pen/qRJOZJ ***/
 nav {
   display: block;
-  position: fixed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 500px;
   height: 500px;
+  margin-top: -250px;
+  margin-left: -250px;
   user-select: none;
-  transform: translate3d(25px, -25px, 0);
+  /*** transform: translate3d(25px, -25px, 0); ***/ 
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
 }
 nav.open {
