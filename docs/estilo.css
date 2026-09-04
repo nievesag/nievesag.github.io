@@ -49,10 +49,16 @@
 
 :root {
   /*** Variables colores ***/
-  --fondo: oklch(11.124% 0.02424 109.783);
+  --fondo: #0C0807;
   --blanco: #FEFFF0;
-  --naranja: #FF7640;
+  
+  --negro: #0C0807;
+  --naranja: #FF5D1D;
   --verde: #B1D500;
+  --morado: #B574FF;
+  --rosa: #FF80B9;
+  --azul: #2B80FF;
+
   /*** Variables giro navbar ***/
   --grados-iniciales: 0deg;
   --grados-finales: 345deg;
@@ -93,10 +99,9 @@ body {
 .content
 {
   flex: 1;
-  background-color: #0000006f;
   color:#fdfdfd;
   overflow-y: auto;
-  margin: 0 16px;
+  padding: 0 16px;
 }
 
 @media (max-width: 800px) {
@@ -110,6 +115,7 @@ body {
 
 h4 {
   color: var(--naranja);
+  scroll-margin-top: 10vmin;
 }
 
 hr {
@@ -122,6 +128,13 @@ hr {
   margin-bottom: 48px;
   color:rgb(253, 253, 253);
 }
+
+.project video {
+  width: 100px;
+}
+
+
+
 
 
 
@@ -176,7 +189,7 @@ nav.top-right {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: tomato;
+  background: var(--verde);
   transition-delay: 0s;
 }
 .open .l1 {
@@ -186,7 +199,7 @@ nav.top-right {
 }
 .open .l1:hover {
   background: shade(tomato, 90%);
-  color: rgb(0, 21, 255);
+  color: var(--azul);
   transition-delay: 0s;
 }
 .open .l1:active {
@@ -202,7 +215,7 @@ nav.top-right {
   left: 50px;
   right: 50px;
   bottom: 50px;
-  background: #ff7a39;
+  background: var(--rosa);
   transition-delay: 0.1s;
 }
 .open .l2 {
@@ -212,7 +225,7 @@ nav.top-right {
 }
 .open .l2:hover {
   background: shade(#ff7a39, 90%);
-  color: rgb(0, 21, 255);
+  color: var(--negro);
   transition-delay: 0s;
 }
 .open .l2:active {
@@ -228,7 +241,7 @@ nav.top-right {
   left: 100px;
   right: 100px;
   bottom: 100px;
-  background: #ff912b;
+  background: var(--morado);
   transition-delay: 0.2s;
 }
 .open .l3 {
@@ -254,7 +267,7 @@ nav.top-right {
   left: 150px;
   right: 150px;
   bottom: 150px;
-  background: #ffa91c;
+  background: var(--azul);
   transition-delay: 0.3s;
 }
 .open .l4 {
@@ -305,7 +318,7 @@ nav.top-right {
   line-height: 100px;
   padding: 0;
   width: 100px;
-  background: gold;
+  background: var(--naranja);
   opacity: 1;
   transform: none;
   pointer-events: auto;
@@ -323,4 +336,51 @@ nav.top-right {
   color: rgba(255, 215, 0, 0.5);
   transform: scale(0.9);
   transition-duration: 0s;
+}
+
+
+
+
+/*** Timeline ***/
+/*** ref.: https://codepen.io/NielsVoogt/pen/MbMMxv/ ***/
+.container {
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  padding: 3em 2em 2em;
+  position: relative;
+  color: var(--blanco);
+  border-left: 2px solid var(--blanco);
+}
+.timeline-item p {
+  font-size: 1rem;
+}
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 0.785rem;
+}
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: "";
+  border: 2px solid var(--blanco);
+  background: var(--fondo);
+}
+.timeline-item:last-child {
+  border-image: linear-gradient(to bottom, var(--blanco) 60%, var(--blanco)) 1 100%;
 }
