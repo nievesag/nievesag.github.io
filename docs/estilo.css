@@ -1,7 +1,7 @@
 /*** Works on common browsers ***/
 ::selection {
-    background-color: #B1D500;
-    color: #0080ff;
+    background-color: #d54000;
+    color: #ccff00;
 }
 
 /*** Mozilla based browsers ***/
@@ -47,12 +47,16 @@
   src: url('fnt/Doto-VariableFont_ROND,wght.ttf');
 }
 
-/*** Variables colores ***/
 :root {
+  /*** Variables colores ***/
   --fondo: oklch(11.124% 0.02424 109.783);
   --blanco: #FEFFF0;
   --naranja: #FF7640;
   --verde: #B1D500;
+  /*** Variables giro navbar ***/
+  --grados-iniciales: 0deg;
+  --grados-finales: 345deg;
+  --grados-efecto: 190deg;
 }
 
 html {
@@ -82,15 +86,17 @@ body {
 {
   flex: 1;
   overflow: hidden;
-  background-color: #ff77003b;
   position: relative;
+  color:#fdfdfd;
 }
 
 .content
 {
   flex: 1;
-  background-color: #0080ff6f;
+  background-color: #0000006f;
+  color:#fdfdfd;
   overflow-y: auto;
+  margin-right: 30px;
 }
 
 @media (max-width: 800px) {
@@ -102,9 +108,20 @@ body {
   }
 }
 
+h4 {
+  color: var(--naranja);
+}
 
+hr {
+  border: 1px solid;
+}
 
-
+.content hr
+{
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color:rgb(253, 253, 253);
+}
 
 
 
@@ -140,14 +157,14 @@ nav.top-right {
   line-height: 40px;
   padding-top: 10px;
   border-radius: 250px;
-  transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, var(--grados-efecto));
   pointer-events: none;
   opacity: 0;
   cursor: pointer;
   transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
 }
 .disc div {
-  transform: rotate(180deg);
+  transform: rotate(var(--grados-iniciales));
 }
 .open .disc {
   pointer-events: auto;
@@ -164,12 +181,12 @@ nav.top-right {
 }
 .open .l1 {
   transition-delay: 0s;
-  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
 .open .l1:hover {
   background: shade(tomato, 90%);
-  color: tomato;
+  color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
 .open .l1:active {
@@ -190,12 +207,12 @@ nav.top-right {
 }
 .open .l2 {
   transition-delay: 0.1s;
-  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
 .open .l2:hover {
   background: shade(#ff7a39, 90%);
-  color: #ff7a39;
+  color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
 .open .l2:active {
@@ -216,12 +233,12 @@ nav.top-right {
 }
 .open .l3 {
   transition-delay: 0.2s;
-  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
 .open .l3:hover {
   background: shade(#ff912b, 90%);
-  color: #ff912b;
+  color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
 .open .l3:active {
@@ -242,12 +259,12 @@ nav.top-right {
 }
 .open .l4 {
   transition-delay: 0.3s;
-  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, var(--grados-finales));
   opacity: 1;
 }
 .open .l4:hover {
   background: shade(#ffa91c, 90%);
-  color: #ffa91c;
+  color: rgb(0, 21, 255);
   transition-delay: 0s;
 }
 .open .l4:active {
@@ -268,7 +285,7 @@ nav.top-right {
 }
 .open .l5 {
   transition-delay: 0.4s;
-  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+  transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -15deg);
   opacity: 1;
 }
 .open .l5:hover {
@@ -281,7 +298,7 @@ nav.top-right {
   color: #ffc00e;
 }
 .open .l5.toggle {
-  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+  transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -15deg);
 }
 
 .toggle {
