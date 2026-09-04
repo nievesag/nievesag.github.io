@@ -80,6 +80,10 @@ body {
   height: 100%;
 }
 
+p {
+  color: var(--blanco);
+}
+
 .wrapper
 {
   height: 100vh;
@@ -130,7 +134,9 @@ hr {
 }
 
 .project video {
-  width: 100px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 
