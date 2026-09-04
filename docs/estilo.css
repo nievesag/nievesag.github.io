@@ -56,7 +56,7 @@
   /*** Variables giro navbar ***/
   --grados-iniciales: 0deg;
   --grados-finales: 345deg;
-  --grados-efecto: 190deg;
+  --grados-efecto: 200deg;
 }
 
 html {
