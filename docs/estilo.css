@@ -116,7 +116,7 @@ h1 {
   scroll-margin-top: 10vmin;
 }
 
-img {
+.card-image img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
@@ -160,29 +160,19 @@ img {
 
 .link-li {
   list-style-type: none;
-  
-  margin: 0 20px;
-  &:nth-child(1) button {
-    background: #F3FFBD;
-  }
-  &:nth-child(2) button {
-    background: #247BA0;
-  }
-  &:nth-child(3) button {
-    background: #FF1654;
-  }
-  &:nth-child(4) button {
-    background: #de83ec;
-  }
 
+  margin: 0 20px;
   align-self: center;
 }
 
 .link-btn {
   position: relative;
-  background: rebeccapurple;
-  width: auto;
-  height: auto;
+  background-color: #B1D500;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
   border: 5px solid var(--verde);
   color: white;
@@ -190,11 +180,57 @@ img {
   font-size: 40px;
   cursor: pointer;
   padding: 0;
+  text-decoration: none;
+}
+
+.link-btn img {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .bio {
+  display: inline-block;
+
   text-align: justify;
   text-justify: inter-word;
+  font-weight: 550;
+  font-size: 0.8rem;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+
+.bio-img {
+  width: 50%;
+  height: 50%;
+}
+
+.imageflex 
+{ 
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.imageflexcontent { 
+  margin-left: 5px; 
+  margin-top: 0;
+  display: flex;
+
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: 550;
+  font-size: 0.8rem;
+}
+
+.about-bio {
+  display: grid;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.about-bio-column {
+  display: inline-block;
+  vertical-align: top;
 }
 
 .cards {
@@ -216,10 +252,16 @@ img {
   .cards_item {
     width: 50%;
   }
+  .imageflex { 
+    width: 50%;
+  }
 }
 
 @media (min-width: 56rem) {
   .cards_item {
+    width: 33.3333%;
+  }
+    .imageflex  { 
     width: 33.3333%;
   }
 }
@@ -404,7 +446,7 @@ img {
 }
 
 .one {
-  top: 0;
+  top: 50px;
   border-width: 0 0 6px 0;
   border-color: var(--naranja);
   border-style: solid;

@@ -13,7 +13,8 @@
   <script src="script.js" defer></script>
 </head>
 
-  <!-- scroll -->
+<!-- scroll -->
+
 <body>
   <div class="ruler">
     <div class="mask one">0%</div>
@@ -83,30 +84,64 @@
   <div class="main">
     <div class="about">
       <h1 id="about-me">About me</h1>
-      <p class="bio">Last-year student of video game development equipped with a deep love for videogames eager to start working
-        in the game industry and make my mark.
-        By participating in game jams and working on both university and personal projects, have gained experience
-        working with and coordinating development teams, holding roles as a gameplay programmer, UI/UX programmer,
-        game-flow programmer and engine programmer.
-        With a solid foundation in artistic knowledge, thanks to my experience as a visual development artist, painter
-        and illustrator, I have been able to develop as a technical artist allowing me to work as a bridge between
-        programmers and artists in development teams.
-        I approach programming as a creative tool for bringing worlds to life through my code.</p>
+      <div class="about-bio">
+        <div class="about-bio-column">
+          <p class="bio">Last-year student of video game development equipped with a deep love for videogames eager to
+            start working
+            in the game industry and make my mark.
+            By participating in game jams and working on both university and personal projects, have gained experience
+            working with and coordinating development teams, holding roles as a gameplay programmer, UI/UX programmer,
+            game-flow programmer and engine programmer.
+          </p>
+          <img class="bio-img" src="./img/placeholder_1.png" alt="ph1">
+        </div>
+
+        <div class="about-bio-column">
+          <p class="bio">
+            With a solid foundation in artistic knowledge, thanks to my experience as a visual development artist,
+            painter
+            and illustrator, I have been able to develop as a technical artist allowing me to work as a bridge between
+            programmers and artists in development teams.
+            I approach programming as a creative tool for bringing worlds to life through my code.</p>
+          <img class="bio-img" src="./img/placeholder_2.png" alt="ph2">
+        </div>
+
+        <div class="imageflex">
+          <img
+            src="https://images.unsplash.com/photo-1487111023822-2e903e12f6f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80">
+          <p class="imageflexcontent">Last-year student of video game development equipped with a deep love for
+            videogames eager to
+            start working
+            in the game industry and make my mark.
+            By participating in game jams and working on both university and personal projects, have gained experience
+            working with and coordinating development teams, holding roles as a gameplay programmer, UI/UX programmer,
+            game-flow programmer and engine programmer.</p>
+        </div>
+
+      </div>
 
       <!-- links -->
       <div class="links">
         <ul class="link-ul">
           <li class="link-li">
-            <button class="link-btn">🦊</button>
+            <a class="link-btn" href="https://nievalon.itch.io/" target="_blank">
+              <img src="img/clipboard-user-solid-full.svg">
+            </a>
           </li>
           <li class="link-li">
-            <button class="link-btn">🐶</button>
+            <a class="link-btn" href="www.linkedin.com/in/nieves-alonso-gilsanz" target="_blank">
+              <img src="img/linkedin-brands-solid-full.svg">
+            </a>
           </li>
           <li class="link-li">
-            <button class="link-btn">🦄</button>
+            <a class="link-btn" href="https://github.com/nievesag" target="_blank">
+              <img src="img/github-brands-solid-full.svg">
+            </a>
           </li>
           <li class="link-li">
-            <button class="link-btn">🐺​</button>
+            <a class="link-btn" href="https://nievalon.itch.io/" target="_blank">
+              <img src="img/itch-io-brands-solid-full.svg">
+            </a>
           </li>
         </ul>
       </div>
@@ -121,7 +156,7 @@
       <ul class="cards">
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=10"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -132,7 +167,7 @@
 
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=5"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -142,7 +177,7 @@
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=11"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -152,7 +187,7 @@
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=14"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -162,7 +197,7 @@
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=17"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>
@@ -172,7 +207,7 @@
         </li>
         <li class="cards_item">
           <div class="card">
-            <div class="card_image"><img src="https://picsum.photos/500/300/?image=2"></div>
+            <div class="card-image"><img src="https://picsum.photos/500/300/?image=2"></div>
             <div class="card_content">
               <h2 class="card_title">Card Grid Layout</h2>
               <p class="card_text">Demo of pixel perfect pure CSS simple responsive card grid layout</p>

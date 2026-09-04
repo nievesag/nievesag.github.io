@@ -90,14 +90,4 @@ class HoverButton {
   }
 }
 
-const btn1 = document.querySelector('li:nth-child(1) button');
-new HoverButton(btn1);
-
-const btn2 = document.querySelector('li:nth-child(2) button');
-new HoverButton(btn2);
-
-const btn3 = document.querySelector('li:nth-child(3) button');
-new HoverButton(btn3);
-
-const btn4 = document.querySelector('li:nth-child(4) button');
-new HoverButton(btn4);
+document.querySelectorAll('.link-btn').forEach(btn => new HoverButton(btn));
