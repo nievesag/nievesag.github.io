@@ -43,6 +43,11 @@
     </div>
 
     <div class="content">
+      <div class="lang-grid">
+        <button class="button-lang">eng</button>
+        <p>/</p>
+        <button class="button-lang">esp</button>
+      </div>
       <hr>
       <div>
         <h4 id="about-me">about me</h4>
@@ -65,7 +70,7 @@
         <p>➝ <a class="links" href="https://www.linkedin.com/in/nieves-alonso-gilsanz/" target="_blank">linkedin</a></p>
         <hr>
       </div>
-      <div>
+      <div class="separator">
         <h4 id="profile">profile</h4>
         <h3>education</h3>
         <div class="container">
@@ -78,10 +83,61 @@
             <p>IES Pintor Antonio López, Madrid, Spain</p>
           </div>
         </div>
-        <h3>skills</h3>
-        <h3>languages</h3>
         <hr>
+        <h3>skills</h3>
+        <div class="skills">
+          <h3>languages ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">C++</button>
+            <button class="button-skills">C#</button>
+            <button class="button-skills">C</button>
+            <button class="button-skills">GDScript</button>
+            <button class="button-skills">HLSL</button>
+            <button class="button-skills">GLSL</button>
+          </div>
+          <h3>engines ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">Unity Engine</button>
+            <button class="button-skills">Godot Engine</button>
+          </div>
+          <h3>version control ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">Git / Github</button>
+          </div>
+          <h3>libraries ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">SDL</button>
+            <button class="button-skills">OpenGL</button>
+            <button class="button-skills">PhysX</button>
+            <button class="button-skills">OGRE</button>
+            <button class="button-skills">Dear ImGui</button>
+            <button class="button-skills">sol2</button>
+          </div>
+          <h3>art & design ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">Krita</button>
+            <button class="button-skills">Figma</button>
+            <button class="button-skills">Blender</button>
+            <button class="button-skills">GIMP</button>
+          </div>
+          <h3>audio ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">FMOD</button>
+          </div>
+          <h3>soft skills ➝</h3>
+          <div class="info-grid">
+            <button class="button-skills">Team planning</button>
+            <button class="button-skills">Organization</button>
+            <button class="button-skills">Intellectual curiosity</button>
+            <button class="button-skills">Creativity</button>
+            <button class="button-skills">Adaptability</button>
+            <button class="button-skills">Perseverance</button>
+          </div>
+        </div>
+        <hr>
+        <h3>languages</h3>
       </div>
+      <hr>
       <div class="separator">
         <h4 id="projects">projects</h4>
         <div class="project">
@@ -178,11 +234,39 @@
             <button class="button-info">SDL</button>
           </div>
         </div>
+        <hr>
+        <p>More projects ➝ <a class="links" href="https://nievalon.itch.io/" target="_blank">itch.io</a></p>
       </div>
       <hr>
       <div>
         <h4 id="contact">contact</h4>
-        <p>Get in touch ➝ <a class="links" href="mailto:nalonsogf@gmail.com">nalonsogf at gmail dot com </a></p>
+        <p>Get in touch ➝ <a class="links" href="mailto:nalonsogf@gmail.com">nalonsogf at gmail dot com</a></p>
+        <div class="contact-div">
+          <form action="https://formsubmit.co/el/suvima" method="POST">
+            <div class="contact-row">
+              <label for="name" data-i18n="formName">name ↴</label>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="contact-row">
+              <label for="mail" data-i18n="formEmail">email ↴</label>
+              <input type="email" id="mail" name="email">
+            </div>
+
+            <div class="contact-row">
+              <label for="subject" data-i18n="formSubject">subject ↴</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+
+            <div class="contact-row">
+              <label for="msg" data-i18n="formMessage">message ↴</label>
+              <textarea id="msg" name="message"></textarea>
+            </div>
+
+            <div class="send">
+              <button type="submit" data-i18n="formSend">send</button>
+            </div>
+          </form>
+        </div>
         <hr>
       </div>
       <footer>
