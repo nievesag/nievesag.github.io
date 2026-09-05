@@ -258,6 +258,7 @@ textarea {
   background-color: var(--negro);
   color: var(--blanco);
   font-size: 1rem;
+  font-family: 'Inter';
 }
 
 label {
@@ -319,9 +320,6 @@ form>.send>button:hover {
 {
   background-color: var(--naranja);
   color: var(--negro);
-}
-.button-lang:target {
-  color: red;
 }
 
 @media (max-width: 800px) {
@@ -462,7 +460,6 @@ nav.top-right {
 }
 
 .open .l2:hover {
-  background: shade(var(--naranja), 90%);
   color: var(--rosa-osc);
   transition-delay: 0s;
 }
@@ -493,13 +490,11 @@ nav.top-right {
 }
 
 .open .l3:hover {
-  background: shade(#ff912b, 90%);
   color: var(--morado-osc);
   transition-delay: 0s;
 }
 
 .open .l3:active {
-  background: shade(#ff912b, 50%);
   color: var(--morado-cla);
 }
 
@@ -524,7 +519,6 @@ nav.top-right {
 }
 
 .open .l4:hover {
-  background: shade(#ffa91c, 90%);
   color: var(--azul-osc);
   transition-delay: 0s;
 }
