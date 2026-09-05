@@ -48,11 +48,18 @@
   --blanco: #FEFFF0;
 
   --negro: #0C0807;
+
   --naranja: #FF5D1D;
   --verde: #B1D500;
   --morado: #B574FF;
   --rosa: #FF80B9;
   --azul: #2B80FF;
+
+  --naranja-osc: #A51E00;
+  --verde-osc: #486C00;
+  --morado-osc: #620FC1;
+  --rosa-osc: #C41F69;
+  --azul-osc: #003AC2;
 
   /*** Variables giro navbar ***/
   --grados-iniciales: 0deg;
@@ -196,6 +203,16 @@ hr {
   outline-offset: 5px;
 }
 
+.links
+{
+  color: var(--naranja);
+}
+
+.links:hover{
+  background-color: var(--verde);
+  color: var(--negro);
+}
+
 @media (max-width: 800px) {
   .wrapper {
     flex-direction: column;
@@ -291,6 +308,7 @@ nav.top-right {
   right: 0px;
   bottom: 0px;
   background: var(--verde);
+  color: var(--blanco);
   transition-delay: 0s;
 }
 
@@ -302,7 +320,7 @@ nav.top-right {
 
 .open .l1:hover {
   background: shade(tomato, 90%);
-  color: var(--azul);
+  color: var(--verde-osc);
   transition-delay: 0s;
 }
 
@@ -321,6 +339,7 @@ nav.top-right {
   right: 50px;
   bottom: 50px;
   background: var(--rosa);
+  color: var(--blanco);
   transition-delay: 0.1s;
 }
 
@@ -332,7 +351,7 @@ nav.top-right {
 
 .open .l2:hover {
   background: shade(#ff7a39, 90%);
-  color: var(--negro);
+  color: var(--rosa-osc);
   transition-delay: 0s;
 }
 
@@ -351,6 +370,7 @@ nav.top-right {
   right: 100px;
   bottom: 100px;
   background: var(--morado);
+  color: var(--blanco);
   transition-delay: 0.2s;
 }
 
@@ -362,7 +382,7 @@ nav.top-right {
 
 .open .l3:hover {
   background: shade(#ff912b, 90%);
-  color: rgb(0, 21, 255);
+  color: var(--morado-osc);
   transition-delay: 0s;
 }
 
@@ -381,6 +401,7 @@ nav.top-right {
   right: 150px;
   bottom: 150px;
   background: var(--azul);
+  color: var(--blanco);
   transition-delay: 0.3s;
 }
 
@@ -392,7 +413,7 @@ nav.top-right {
 
 .open .l4:hover {
   background: shade(#ffa91c, 90%);
-  color: rgb(0, 21, 255);
+  color: var(--azul-osc);
   transition-delay: 0s;
 }
 
@@ -422,7 +443,7 @@ nav.top-right {
 
 .open .l5:hover {
   background: shade(#ffc00e, 90%);
-  color: #ffc00e;
+  color: var(--naranja-osc);
   transition-delay: 0s;
 }
 
@@ -451,7 +472,7 @@ nav.top-right {
 }
 
 .toggle:hover {
-  background: shade(gold, 90%);
+  background: shade(rgb(0, 255, 106), 90%);
   text-decoration: underline;
 }
 
