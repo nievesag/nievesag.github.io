@@ -99,6 +99,7 @@ p {
   color: #fdfdfd;
   overflow-y: auto;
   padding: 0 16px;
+  box-sizing: border-box 
 }
 
 h4 {
