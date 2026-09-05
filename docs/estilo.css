@@ -222,6 +222,7 @@ hr {
 
   .site-header {
     position: static;
+    padding: 5%;
   }
 
   .menu {
