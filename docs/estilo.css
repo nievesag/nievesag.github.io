@@ -61,6 +61,12 @@
   --rosa-osc: #C41F69;
   --azul-osc: #003AC2;
 
+  --naranja-cla: #FF8757;
+  --verde-cla: #D9F54C;
+  --morado-cla: #C28EFE;
+  --rosa-cla: #FFA2CC;
+  --azul-cla: #60A0FF;
+
   /*** Variables giro navbar ***/
   --grados-iniciales: 0deg;
   --grados-finales: 345deg;
@@ -207,6 +213,7 @@ hr {
 .links
 {
   color: var(--naranja);
+  text-decoration: none;
 }
 
 .links:hover{
@@ -328,7 +335,7 @@ nav.top-right {
 
 .open .l1:active {
   background: shade(tomato, 50%);
-  color: tomato;
+  color: var(--verde-cla);
 }
 
 .open .l1.toggle {
@@ -359,7 +366,7 @@ nav.top-right {
 
 .open .l2:active {
   background: shade(#ff7a39, 50%);
-  color: #ff7a39;
+  color: var(--rosa-cla);
 }
 
 .open .l2.toggle {
@@ -390,7 +397,7 @@ nav.top-right {
 
 .open .l3:active {
   background: shade(#ff912b, 50%);
-  color: #ff912b;
+  color: var(--morado-cla);
 }
 
 .open .l3.toggle {
@@ -421,7 +428,7 @@ nav.top-right {
 
 .open .l4:active {
   background: shade(#ffa91c, 50%);
-  color: #ffa91c;
+  color: var(--azul-cla);
 }
 
 .open .l4.toggle {
@@ -451,7 +458,7 @@ nav.top-right {
 
 .open .l5:active {
   background: shade(#ffc00e, 50%);
-  color: #ffc00e;
+  color: var(--naranja-cla);
 }
 
 .open .l5.toggle {
@@ -480,7 +487,7 @@ nav.top-right {
 
 .toggle:active {
   background: shade(gold, 50%);
-  color: rgba(255, 215, 0, 0.5);
+  color: var(--naranja-osc);
   transform: scale(0.9);
   transition-duration: 0s;
 }
@@ -505,8 +512,15 @@ nav.top-right {
   border-left: 2px solid var(--blanco);
 }
 
-.timeline-item p {
+.timeline-item p 
+{
   font-size: 1rem;
+  margin-top: -0.7em;
+}
+
+.timeline-item h3
+{
+  margin-top: 1.39em;
 }
 
 .timeline-item::before {
