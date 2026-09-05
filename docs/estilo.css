@@ -212,7 +212,8 @@ hr {
 }
 
 .project-video video:hover {
-  border: 3px solid var(--blanco);
+  outline: 3px solid var(--blanco);
+  outline-offset: 5px;
 }
 
 
@@ -475,7 +476,7 @@ nav.top-right {
 }
 
 .timeline-item {
-  padding: 1em 2em 2em;
+  padding: 1em 2em 0.3em;
   position: relative;
   color: var(--blanco);
   border-left: 2px solid var(--blanco);
