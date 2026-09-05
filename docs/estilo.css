@@ -1,31 +1,32 @@
 /*** Works on common browsers ***/
 ::selection {
-  background-color: #d54000;
-  color: #ccff00;
+  background-color: #FF5D1D;
+  color: #0C0807;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
-  background-color: #352e7e;
-  color: #fff;
+  background-color: #FF5D1D;
+  color: #0C0807;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
-  background-color: #352e7e;
-  color: #fff;
+  background-color: #FF5D1D;
+  color: #0C0807;
 }
 
 ::-ms-selection {
-  background-color: #352e7e;
-  color: #fff;
+  background-color: #FF5D1D;
+  color: #0C0807;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
-  background-color: #352e7e;
-  color: #fff;
+  background-color: #FF5D1D;
+  color: #0C0807;
 }
+
 @font-face {
   font-family: "DotGothic16";
   src: url('fnt/DotGothic16-Regular.ttf');
@@ -100,27 +101,6 @@ p {
   padding: 0 16px;
 }
 
-@media (max-width: 800px) {
-  .wrapper {
-    flex-direction: column;
-    overflow-y: auto;
-  }
-
-  .site-header{
-    position: static;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .content {
-    width: 100%;
-    flex: none;
-    overflow-y: visible;
-  }
-}
-
 h4 {
   color: var(--naranja);
   scroll-margin-top: 10vmin;
@@ -156,7 +136,7 @@ hr {
 .footer-c p {
   float: right;
   padding-bottom: 10px;
-  color:#fefff094;
+  color: #fefff094;
 }
 
 .site-header {
@@ -166,7 +146,59 @@ hr {
   color: var(--blanco);
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    overflow-y: auto;
+  }
 
+  .site-header {
+    position: static;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    flex: none;
+    overflow-y: visible;
+  }
+}
+
+.bio {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.link-btn {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.button-info {
+  margin: 5px;
+  color: var(--blanco);
+  background-color: var(--fondo);
+  border: 2px solid var(--blanco);
+  font-family: 'Inter';
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
 
 
 
