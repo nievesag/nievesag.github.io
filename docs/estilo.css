@@ -159,6 +159,7 @@ hr {
   top: 0;
   left: 0;
   color: var(--blanco);
+  padding: 1%;
 }
 
 .bio {
