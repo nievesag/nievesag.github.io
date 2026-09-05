@@ -98,8 +98,8 @@ p {
   flex: 1;
   color: #fdfdfd;
   overflow-y: auto;
-  padding: 0 16px;
-  box-sizing: border-box 
+  padding: 0 30px;
+  box-sizing: border-box
 }
 
 h4 {
@@ -116,6 +116,12 @@ hr {
 }
 
 .content hr {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  color: var(--blanco);
+}
+
+.separator hr {
   margin-top: 24px;
   margin-bottom: 48px;
   color: rgb(253, 253, 253);
@@ -201,9 +207,13 @@ hr {
   margin: 0;
 }
 
+.project-video {
+  cursor: pointer;
+}
 
-
-
+.project-video video:hover {
+  border: 3px solid var(--blanco);
+}
 
 
 
@@ -451,6 +461,11 @@ nav.top-right {
   transition-duration: 0s;
 }
 
+
+
+
+
+
 /*** Timeline ***/
 /*** ref.: https://codepen.io/NielsVoogt/pen/MbMMxv/ ***/
 .container {
@@ -460,7 +475,7 @@ nav.top-right {
 }
 
 .timeline-item {
-  padding: 3em 2em 2em;
+  padding: 1em 2em 2em;
   position: relative;
   color: var(--blanco);
   border-left: 2px solid var(--blanco);
@@ -477,9 +492,8 @@ nav.top-right {
   font-weight: bold;
   top: 1em;
   display: block;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 0.785rem;
+  font-size: 0.9rem;
 }
 
 .timeline-item::after {
@@ -496,5 +510,5 @@ nav.top-right {
 }
 
 .timeline-item:last-child {
-  border-image: linear-gradient(to bottom, var(--blanco) 60%, var(--blanco)) 1 100%;
+  border-image: linear-gradient(to bottom, var(--blanco) 60%, #0C0807) 1 100%;
 }
