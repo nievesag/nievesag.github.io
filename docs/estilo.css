@@ -124,7 +124,8 @@ hr {
 .separator hr {
   margin-top: 24px;
   margin-bottom: 48px;
-  color: rgb(253, 253, 253);
+  width: 50%;
+  color: var(--naranja);
 }
 
 .project video {
@@ -151,27 +152,6 @@ hr {
   top: 0;
   left: 0;
   color: var(--blanco);
-}
-
-@media (max-width: 800px) {
-  .wrapper {
-    flex-direction: column;
-    overflow-y: auto;
-  }
-
-  .site-header {
-    position: static;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .content {
-    width: 100%;
-    flex: none;
-    overflow-y: visible;
-  }
 }
 
 .bio {
@@ -216,6 +196,26 @@ hr {
   outline-offset: 5px;
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .site-header {
+    position: static;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+    flex: none;
+    overflow-y: visible;
+  }
+}
 
 
 
