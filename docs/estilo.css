@@ -307,7 +307,8 @@ form>.send>button:hover {
 .lang-grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+
+  margin-bottom: -1.3em;
   justify-content: right;
 }
 
