@@ -1,6 +1,5 @@
-descargar cv
-clic nombre recarga página
 traducción
-contacto
-logo
+forms contacto
+favicon
+logo??
 colores en info de juegos??
