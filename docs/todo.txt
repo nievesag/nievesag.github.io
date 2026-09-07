@@ -1,5 +1,4 @@
-traducción
-forms contacto
-favicon
+traducción (-)
+forms contacto (-)
 logo??
 colores en info de juegos??
