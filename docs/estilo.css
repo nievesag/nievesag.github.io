@@ -330,6 +330,14 @@ form>.send>button:hover {
   background-color: var(--negro);
   color: var(--blanco);
 }
+.button-lang a {
+  color: var(--negro);
+}
+.button-lang:hover a
+{
+  background-color: var(--negro);
+  color: var(--blanco);
+}
 
 .lang-margen
 {
