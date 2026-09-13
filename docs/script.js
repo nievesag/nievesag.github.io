@@ -3,7 +3,7 @@ const translations = {
     title_about: "about me"
   },
   es: {
-    title_about: "sobre mí"
+    title_about: "about me"
   }
 }
 
