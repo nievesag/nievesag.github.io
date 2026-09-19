@@ -85,7 +85,9 @@ toggle.addEventListener('click', function () {
 
   if (nav.classList.contains('open')) {
     toggle.innerHTML = toggle_close_text;
-  } else {
+  } else 
+  {
+    toggle_open_text = (document.documentElement.lang == 'en') ? "menu" : "menú";
     toggle.innerHTML = toggle_open_text;
   }
 }, false);
@@ -101,8 +103,11 @@ function setLanguage(language) {
   document.documentElement.lang = selectedLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const value = translations[selectedLanguage][element.dataset.i18n];
-    if (value !== undefined) element.innerHTML = value.replace(/\n\n/g, "<br><br>");
+    if(element.innerHTML != 'X')
+    {
+      const value = translations[selectedLanguage][element.dataset.i18n];
+      if (value !== undefined) element.innerHTML = value.replace(/\n\n/g, "<br><br>");
+    }
   });
   
   document.querySelectorAll("[data-language]").forEach((link) => {
