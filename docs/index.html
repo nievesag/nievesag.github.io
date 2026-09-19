@@ -1,7 +1,7 @@
 <!-- Nieves Alonso Gilsanz -->
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -24,19 +24,19 @@
     <div class="menu">
       <div>
         <nav class="navcircle open">
-          <a href="#about-me" class="disc l1">
+          <a data-i18n="title_about" href="#about-me" class="disc l1">
             <div>about me</div>
           </a>
-          <a href="#profile" class="disc l2">
+          <a data-i18n="title_profile" href="#profile" class="disc l2">
             <div>profile</div>
           </a>
-          <a href="#projects" class="disc l3">
+          <a data-i18n="title_projects" href="#projects" class="disc l3">
             <div>projects</div>
           </a>
-          <a href="#contact" class="disc l4">
+          <a data-i18n="title_contact" href="#contact" class="disc l4">
             <div>contact</div>
           </a>
-          <a class="disc l5 toggle">
+          <a data-i18n="title_menu" class="disc l5 toggle">
             menu
           </a>
         </nav>
@@ -45,46 +45,51 @@
     </div>
 
     <div class="content">
-
+      <div class="lang-grid">
+        <button type="button" class="button-lang" data-language="en" lang="en" aria-label="English">eng</button>
+        <p>/</p>
+        <button type="button" class="button-lang" data-language="es" lang="es" aria-label="Español">esp</button>
+      </div>
       <hr>
       <div>
         <h4 data-i18n="title_about" id="about-me">about me</h4>
-        <p class="bio">Last-year student of videogame development equipped with a deep love for videogames eager to
+        <p data-i18n="bio" class="bio">Last-year student of videogame development equipped with a deep love for videogames eager to
           start working in the game industry and make my mark.
           <br>
           By participating in game jams and working on both university and personal projects,
           I have gained experience working with and coordinating development teams, holding roles as a gameplay
           programmer, UI/UX programmer, game-flow programmer and engine programmer.
           <br></br>
-          With a solid foundation in artistic knowledge, thanks to my experience as a visual development artist, painter
+          With a solid foundation in artistic knowledge, thanks to my experience as an art director, visual development artist, painter
           and illustrator, I have been able to develop as a technical artist allowing me to work as a bridge between
           programmers and artists in development teams.
           <br></br>
           I approach programming as a creative tool for bringing worlds to life through my code.
         </p>
-        <p>➝ <a class="links" href="/doc/nieves-alonso-gilsanz_2026.pdf" download="nieves-alonso-gilsanz_cv.pdf">cv</a></p>
+        <p>➝ <a class="links" href="/doc/nieves-alonso-gilsanz_2026.pdf" download="nieves-alonso-gilsanz_cv.pdf">cv</a>
+        </p>
         <p>➝ <a class="links" href="https://github.com/nievesag" target="_blank">github</a></p>
         <p>➝ <a class="links" href="https://nievalon.itch.io/" target="_blank">itch.io</a></p>
         <p>➝ <a class="links" href="https://www.linkedin.com/in/nieves-alonso-gilsanz/" target="_blank">linkedin</a></p>
         <hr>
       </div>
       <div class="separator">
-        <h4 id="profile">profile</h4>
-        <h3>education</h3>
+        <h4 data-i18n="title_profile" id="profile">profile</h4>
+        <h3 data-i18n="title_education">education</h3>
         <div class="container">
           <div class="timeline-item" date-is='Sept. 2022 - Present'>
-            <h3>Bachelor's Degree in Videogame Development</h3>
-            <p>Universidad Complutense de Madrid (UCM), Spain</p>
+            <h3 data-i18n="education_bachelors">Bachelor's Degree in Videogame Development</h3>
+            <p data-i18n="education_uni">Universidad Complutense de Madrid (UCM), Spain</p>
           </div>
           <div class="timeline-item" date-is='2020 - 2022'>
-            <h3>Baccaulerate in Science and Technology</h3>
-            <p>IES Pintor Antonio López, Madrid, Spain</p>
+            <h3 data-i18n="education_baccaulerate">Baccaulerate in Science and Technology</h3>
+            <p data-i18n="education_ies">IES Pintor Antonio López, Madrid, Spain</p>
           </div>
         </div>
         <hr>
-        <h3>skills</h3>
+        <h3 data-i18n="title_skills">skills</h3>
         <div class="skills">
-          <h3>programming languages ➝</h3>
+          <h3 data-i18n="programming_title">programming languages ➝</h3>
           <div class="info-grid">
             <button class="button-skills">C++</button>
             <button class="button-skills">C#</button>
@@ -93,16 +98,16 @@
             <button class="button-skills">HLSL</button>
             <button class="button-skills">GLSL</button>
           </div>
-          <h3>engines ➝</h3>
+          <h3 data-i18n="engines_title">engines ➝</h3>
           <div class="info-grid">
             <button class="button-skills">Unity Engine</button>
             <button class="button-skills">Godot Engine</button>
           </div>
-          <h3>version control ➝</h3>
+          <h3 data-i18n="version_title">version control ➝</h3>
           <div class="info-grid">
             <button class="button-skills">Git / Github</button>
           </div>
-          <h3>libraries ➝</h3>
+          <h3 data-i18n="libraries_title">libraries ➝</h3>
           <div class="info-grid">
             <button class="button-skills">SDL</button>
             <button class="button-skills">OpenGL</button>
@@ -111,18 +116,18 @@
             <button class="button-skills">Dear ImGui</button>
             <button class="button-skills">sol2</button>
           </div>
-          <h3>art & design ➝</h3>
+          <h3 data-i18n="art_title">art & design ➝</h3>
           <div class="info-grid">
             <button class="button-skills">Krita</button>
             <button class="button-skills">Figma</button>
             <button class="button-skills">Blender</button>
             <button class="button-skills">GIMP</button>
           </div>
-          <h3>audio ➝</h3>
+          <h3 data-i18n="audio_title">audio ➝</h3>
           <div class="info-grid">
             <button class="button-skills">FMOD</button>
           </div>
-          <h3>soft skills ➝</h3>
+          <h3 data-i18n="softs_title">soft skills ➝</h3>
           <div class="info-grid">
             <button class="button-skills">Team planning</button>
             <button class="button-skills">Organization</button>
@@ -133,21 +138,21 @@
           </div>
         </div>
         <hr>
-        <h3>languages</h3>
+        <h3 data-i18n="title_languages">languages</h3>
         <div class="info-grid">
           <div class="lang-margen">
-            <h3 class="idioma">English | C1 Advanced user</h3>
-            <p>Grade A in the Cambridge Certificate in Advanced English</p>
+            <h3 data-i18n="eng_language" class="idioma">English | C1 Advanced user</h3>
+            <p data-i18n="eng_language_info">Grade A in the Cambridge Certificate in Advanced English</p>
           </div>
           <div class="lang-margen">
-            <h3 class="idioma">Spanish | Native speaker</h3>
-            <p>Mother tongue</p>
+            <h3 data-i18n="esp_language" class="idioma">Spanish | Native speaker</h3>
+            <p data-i18n="esp_language_info">Mother tongue</p>
           </div>
         </div>
       </div>
       <hr>
       <div class="separator">
-        <h4 id="projects">projects</h4>
+        <h4 data-i18n="title_projects" id="projects">projects</h4>
         <div class="project">
           <a href="https://github.com/CHAVALES-Engine/CHAVALES-Engine" target="_blank" rel="noopener noreferrer"
             class="project-video">
@@ -158,7 +163,7 @@
             </div>
           </a>
           <h3>CHAVALES Engine</h3>
-          <p>Data-driven EC game engine written in C++ for Windows.</p>
+          <p data-i18n="chavales_desc">Data-driven EC game engine written in C++ for Windows.</p>
           <div class="info-grid">
             <button class="button-info">C++</button>
             <button class="button-info">C</button>
@@ -181,7 +186,7 @@
             </div>
           </a>
           <h3>Tirabolas</h3>
-          <p>Arcade-like videogame developed in CHAVALES Engine, gameplay written in C++ and scene serialization in Lua.
+          <p data-i18n="tirabolas_desc">Arcade-like videogame developed in CHAVALES Engine, gameplay written in C++ and scene serialization in Lua.
           </p>
           <div class="info-grid">
             <button class="button-info">C++</button>
@@ -200,7 +205,8 @@
             </div>
           </a>
           <h3>NormalPaint</h3>
-          <p>Real-time 3D texture (albedo & normal map) painting software prototype, made with Godot.</p>
+          <p data-i18n="normal_desc">Real-time 3D texture (albedo & normal map) painting software prototype, made with
+            Godot.</p>
           <div class="info-grid">
             <button class="button-info">Godot Engine</button>
             <button class="button-info">GDScript</button>
@@ -218,9 +224,8 @@
             </div>
           </a>
           <h3>Hoy tocan Las Magnolias</h3>
-          <p>Rhythm videogame in Godot compatible with guitar controller and data-driven levels by a team of 4 people
-            for a 5-day jam.
-          </p>
+          <p data-i18n="magnolias_desc">Rhythm videogame in Godot compatible with guitar controller and data-driven
+            levels by a team of 4 people for a 5-day jam.</p>
           <div class="info-grid">
             <button class="button-info">Godot Engine</button>
             <button class="button-info">GDScript</button>
@@ -237,7 +242,8 @@
             </div>
           </a>
           <h3>Módulo espacial Chladni</h3>
-          <p>2D physical simulation videogame of the Chladni plates experiment, made with Unity & FMOD.</p>
+          <p data-i18n="chladni_desc">2D physical simulation videogame of the Chladni plates experiment, made with Unity
+            & FMOD.</p>
           <div class="info-grid">
             <button class="button-info">Unity Engine</button>
             <button class="button-info">C#</button>
@@ -254,20 +260,21 @@
             </div>
           </a>
           <h3>Höllenhaus</h3>
-          <p>Deck-building videogame with local 1v1 multiplayer and PSX aesthetic written in C++ with SDL by a team of
-            11 people.</p>
+          <p data-i18n="hollenhaus_desc">Deck-building videogame with local 1v1 multiplayer and PSX aesthetic written in
+            C++ with SDL by a team of 11 people.</p>
           <div class="info-grid">
             <button class="button-info">C++</button>
             <button class="button-info">SDL</button>
           </div>
         </div>
         <hr>
-        <h3>More projects ➝ <a class="links" href="https://nievalon.itch.io/" target="_blank">itch.io</a></h3>
+        <h3 data-i18n="more">More projects ➝ <a class="links" href="https://nievalon.itch.io/" target="_blank">itch.io</a></h3>
       </div>
       <hr>
       <div>
-        <h4 id="contact">contact</h4>
-        <p>Get in touch ➝ <a class="links" href="mailto:nalonsogf@gmail.com">nalonsogf at gmail dot com</a></p>
+        <h4 data-i18n="title_contact" id="contact">contact</h4>
+        <p data-i18n="get_in_touch">Get in touch ➝ <a class="links" href="mailto:nalonsogf@gmail.com">nalonsogf at gmail
+            dot com</a></p>
         <div class="contact-div">
           <form action="https://formsubmit.co/6e7ceda2c1b605438de9c648515182d0" method="POST">
             <div class="contact-row">
