@@ -10,7 +10,7 @@ const translations = {
     formSubject: "subject ↴",
     formMessage: "message ↴",
     formSend: "send",
-    get_in_touch: "Get in touch ➝ ",
+    get_in_touch: "Get in touch ➝ <a class=\"links\" href=\"mailto:nalonsogf@gmail.com\">nalonsogf at gmail dot com</a>",
     title_education: "education",
     title_skills: "skills",
     title_languages: "languages",
@@ -34,7 +34,8 @@ const translations = {
     normal_desc: "Real-time 3D texture (albedo & normal map) painting software prototype, made with Godot and accelerated via compute shaders.",
     magnolias_desc: "Rhythm videogame in Godot compatible with guitar controller and data-driven levels by a team of 4 people for a 5-day jam.",
     chladni_desc: "2D physical simulation videogame of the Chladni plates experiment, made with Unity & FMOD.",
-    hollenhaus_desc: "Deck-building videogame with local 1v1 multiplayer and PSX aesthetic written in C++ with SDL by a team of 11 people."
+    hollenhaus_desc: "Deck-building videogame with local 1v1 multiplayer and PSX aesthetic written in C++ with SDL by a team of 11 people.",
+    more: "More projects ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>"
   },
   es: {
     title_menu: "menú",
@@ -47,7 +48,7 @@ const translations = {
     formSubject: "asunto ↴",
     formMessage: "mensaje ↴",
     formSend: "enviar",
-    get_in_touch: "Ponte en contacto ➝ ",
+    get_in_touch: "Ponte en contacto ➝ <a class=\"links\" href=\"mailto:nalonsogf@gmail.com\">nalonsogf at gmail dot com</a>",
     title_education: "estudios",
     title_skills: "habilidades",
     title_languages: "idiomas",
@@ -71,7 +72,8 @@ const translations = {
     normal_desc: "Prototipo de aplicación de pintura albedo y normal maps de modelos 3D en tiempo real, hecho en Godot y acelerada por shaders de cómputo.",
     magnolias_desc: "Videojuego de ritmo en Godot compatible con controlador de guitarra y niveles dirigidos por datos, realizado por un equipo de 4 personas para una jam de 5 días.",
     chladni_desc: "Videojuego simulador del modelo físico de las placas de Chladni en 2D, hecho en Unity, usando FMOD.",
-    hollenhaus_desc: "Videojuego de deck-building con multijugador 1v1 local y estética PSX programado en C++ con SDL por un equipo de 11 personas."
+    hollenhaus_desc: "Videojuego de deck-building con multijugador 1v1 local y estética PSX programado en C++ con SDL por un equipo de 11 personas.",
+    more: "Más proyectos ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>"
   }
 }
 
