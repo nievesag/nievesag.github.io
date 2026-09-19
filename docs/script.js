@@ -35,7 +35,8 @@ const translations = {
     magnolias_desc: "Rhythm videogame in Godot compatible with guitar controller and data-driven levels by a team of 4 people for a 5-day jam.",
     chladni_desc: "2D physical simulation videogame of the Chladni plates experiment, made with Unity & FMOD.",
     hollenhaus_desc: "Deck-building videogame with local 1v1 multiplayer and PSX aesthetic written in C++ with SDL by a team of 11 people.",
-    more: "More projects ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>"
+    more: "More projects ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>",
+    bio: "Last-year student of videogame development equipped with a deep love for videogames eager to start working in the game industry and make my mark.<br>By participating in game jams and working on both university and personal projects, I have gained experience working with and coordinating development teams, holding roles as a gameplay programmer, UI/UX programmer, game-flow programmer and engine programmer.<br></br>With a solid foundation in artistic knowledge, thanks to my experience as an art director, visual development artist, painter and illustrator, I have been able to develop as a technical artist allowing me to work as a bridge between programmers and artists in development teams. <br></br>I approach programming as a creative tool for bringing worlds to life through my code."
   },
   es: {
     title_menu: "menú",
@@ -73,7 +74,8 @@ const translations = {
     magnolias_desc: "Videojuego de ritmo en Godot compatible con controlador de guitarra y niveles dirigidos por datos, realizado por un equipo de 4 personas para una jam de 5 días.",
     chladni_desc: "Videojuego simulador del modelo físico de las placas de Chladni en 2D, hecho en Unity, usando FMOD.",
     hollenhaus_desc: "Videojuego de deck-building con multijugador 1v1 local y estética PSX programado en C++ con SDL por un equipo de 11 personas.",
-    more: "Más proyectos ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>"
+    more: "Más proyectos ➝ <a class=\"links\" href=\"https://nievalon.itch.io/\" target=\"_blank\">itch.io</a>",
+    bio: "Estudiante de último año de desarrollo de videojuegos con ganas de entrar a trabajar en la industria y dejar huella.<br>A través de participar en game jams y trabajar en proyectos tanto universitarios como personales, he adquirido experiencia trabajando y coordinando equipos de desarrollo y he desempeñado roles de programadora de gameplay, UI/UX, gameflow y engine programmer.<br></br>Con una base sólida de conocimientos artísticos gracias a mi experiencia como directora de arte, visual development artist, pintora e ilustradora en numerosos proyectos he podido desarrollarme como technical artist permitiéndome trabajar como puente entre programadores y artistas.<br></br>Me gusta enfrentarme a la programación como herramienta creativa para hacer realidad mundos a través de mi código."
   }
 }
 
